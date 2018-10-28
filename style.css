@@ -1811,9 +1811,9 @@ SHOP
 }
 
 .shop-extra {
-    margin-top: 40px;
-    padding: 60px 60px 40px;
-    border: 3px solid #f6f6f6;
+    margin-top: 20px;
+    padding: 1px 69px 40px;
+    border: 3px solid #f3f3f3;
 }
 
 .shop-extra .nav-tabs>li>a {
@@ -1844,7 +1844,7 @@ SHOP
 }
 
 .shop-extra strong {
-    color: #000000;
+    color: #ffffff;
 }
 
 .shop-extra .tab-content h3 {

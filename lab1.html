@@ -20,21 +20,21 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-	<!-- Google Fonts -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet"> 
-	
+    
     <!-- Custom & Default Styles -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="style.css">
 
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 <body>  
@@ -45,12 +45,28 @@
     </div><!-- end loader -->
     <!-- END LOADER -->
 
-    
+    <div id="wrapper">
+        <!-- BEGIN # MODAL LOGIN -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Begin # DIV Form -->
+                    <div id="div-forms">
+                        <form id="login-form">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="flaticon-add" aria-hidden="true"></span>
+                            </button>
+                            <div class="modal-body">
+                                <input class="form-control" type="text" placeholder="What you are looking for?" required>
+                            </div>
+                        </form><!-- End # Login Form -->
+                    </div><!-- End # DIV Form -->
+                </div>
+            </div>
+        </div>
         <!-- END # MODAL LOGIN -->
 
-    <!--    <header class="header">-->
-          
- <header class="header header-normal">
+        <header class="header header-normal">
            
 
             <div class="container">
@@ -72,6 +88,9 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a class="active" href="lab1.html">Lab1</a></li>
                                     <li><a href="lab2.html">Lab2</a></li>
+                                     <li><a href="lab3.html">Lab3</a></li>
+                                     <li><a href="lab4.html">Lab4</a></li>
+                                         <li><a href="lab5.html">Lab5</a></li>
                                 </ul>
                             </li>
                             <li><a href="http://chuandep24h.blogspot.com/">Blog</a></li>
@@ -80,63 +99,36 @@
                 </nav><!-- end navbar -->
             </div><!-- end container -->
         </header>
+        
 
-       <!-- start-->
-       <div class="tabs"
-		style="margin-top: 50px; margin-bottom: 50px; margin-left: 120px; margin-right: 120px">
-		<ul class="nav nav-tabs" id="myTab" role="tablist">
-<li class="nav-item"><a class="nav-link active" id="profile-tab"
-				data-toggle="tab" href="#requirement" role="tab" aria-controls="profile"
-				aria-selected="false">Requirement</a></li>
-			<li class="nav-item"><a class="nav-link" id="profile-tab"
-				data-toggle="tab" href="#design" role="tab" aria-controls="profile"
-				aria-selected="false">Design</a></li>
-			<li class="nav-item"><a class="nav-link" id="profile-tab"
-				data-toggle="tab" href="#implementation" role="tab" aria-controls="profile"
-				aria-selected="false">Implementation</a></li>
+      
 
-		</ul>
-		<div class="tab-content" id="myTabContent"
-			style="border: 1px solid transparent; border-color: #ddd; margin-top: 25px;">
-<!--
-			<div class="tab-pane fade show active" id="requirement" role="tabpanel"
-				aria-labelledby="profile-tab">
-				<div class="student" style="margin: 50px 120px">
-					<h2 style="text-al
-                    ign: center; padding-bottom: 20px">Note:</h2>
-  <p>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm cho đối tượng đó</p>
-					
+                    <div class="row">   
+                        <div class="col-md-12">
+                            <div class="shop-extra">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a data-toggle="tab" href="#home">Requirement</a></li>
+                                    <li><a data-toggle="tab" href="#menu1">Design</a></li>
+                                    <li><a data-toggle="tab" href="#menu2">Implementation</a></li>
+                                </ul>
 
+                                <div class="tab-content">
+                                    <div id="home" class="tab-pane fade in active">
+                                    <h3>Requirement</h3>
+                                        <p>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm cho đối tượng đó.</p>
 
-				</div>
-			</div>
-            -->
-           <div class="tab-pane fade" id="requirement" role="tabpanel"
-				aria-labelledby="profile-tab">
-				<div class="student" style="margin: 50px 120px" >
-                <h2 style="text-al
-                    ign: center; padding-bottom: 20px">Note</h2>
-                    <h4>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như sinh viên, môn học, giảng viên,… để thiết kế trên phần mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm cho đối tượng đó.</h4>
-					</div>
-                    </div>
-            
-            
-            <div class="tab-pane fade" id="design" role="tabpanel"
-				aria-labelledby="profile-tab">
-				<div class="student" style="margin: 50px 120px">
-                <h2 style="text-al
-                    ign: center; padding-bottom: 20px">Updating design</h2>
-                    <img src="images/hau/lab1/lab1.png" class="img-responsive wow slideInLeft">
-					</div>
-                    </div>
-                        
-                        
-			<div class="tab-pane fade" id="implementation" role="tabpanel"
-				aria-labelledby="profile-tab">
-				<div class="student" style="margin: 50px 120px">
-					<h2 style="text-align: center; padding-bottom: 20px">Photographer</h2>
+                                       
+                                    </div>
+                                    <div id="menu1" class="tab-pane fade">
+                                        <h3>Design</h3>
+                                        <div>
+                                         <img src="images/hau/lab1/lab1.png" class="img-responsive wow slideInLeft"></div>
+                                    </div>
+                                    <div id="menu2" class="tab-pane fade">
+                                        <h3>Photographer</h3>
 
-					<div class="tablephu">
+                                      
+    <div class="tablephu">
 						<table>
 							<tbody>
 								<tr>
@@ -263,12 +255,14 @@
 												</div>
 											</div>
 										</div></td>
-									<td style="padding-left: 538px"><button
-											class="btn btn-search">
+									<td style="padding-left: 838px">
+                                    <button type="button" class="btn btn-primary"
+											data-toggle="modal" >
 											<span class="fa fa-search" aria-hidden="true"></span>
-										</button></td>
-									<td><input type"text"="" class="form-control find-info"
-										placeholder="Check	..."></td>
+										</button>
+                                    </td>
+									<td><input type"text"="" class="form form-control find-info"
+										placeholder="Check..."></td>
 
 
 								</tr>
@@ -970,27 +964,29 @@
 									
 						</tbody>
 					</table>
-				</div>
-			</div>
+                    </div>
+                                        
+                                     
+                                    
+                                        
+                                    </div>
+                                </div>
+                            </div><!-- end shop-extra -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+    
+</div></div>
+        
 
-		</div>
-
-	</div>
-       <!-- end-->
-
-     
-
-      
+       
     </div><!-- end wrapper -->
 
     <!-- jQuery Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/carousel.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/custom.js"></script>
-    <!-- VIDEO BG PLUGINS -->
-    <script src="js/videobg.js"></script>
 
 </body>
 </html>
